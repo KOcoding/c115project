@@ -30,8 +30,17 @@ function modelLoaded(){
 
 function draw(){
   image(video,0,0,400,400);
+  image(lipstick,noseX - 20, noseY + 12, 50, 30)
 }
 
 function take_snapshot(){    
   save('myFilterImage.png');
 }
+
+function preload(){
+  lipstick= loadImage("lipstick.png")
+}
+
+noseX= 0;
+noseY= 0;
+
